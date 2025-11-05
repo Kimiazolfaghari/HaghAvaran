@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Vazirmatn", sans-serif;
+}
+
 html {
   direction: rtl;
-  font-family: sans-serif;
+  font-family: var(--font-sans);
 }

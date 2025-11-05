@@ -74,7 +74,7 @@ export default function ForgotPassword() {
 
             <div className="flex justify-center pt-4">
               <Link
-                to="/"
+                to="/login"
                 className="text-sm hover:underline font-medium transition-colors"
                 style={{ color: "#DEAF84" }}
               >

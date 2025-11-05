@@ -155,7 +155,7 @@ export default function SignUp() {
             <p className="text-sm text-center" style={{ color: "#43392F" }}>
               حساب کاربری دارید؟{" "}
               <Link
-                to="/"
+                to="/login"
                 className="text-sm hover:underline font-medium transition-colors"
                 style={{ color: "#DEAF84" }}
               >

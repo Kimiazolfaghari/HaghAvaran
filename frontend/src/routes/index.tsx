@@ -1,23 +1,30 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../layouts/Layout"; // مسیر دقیق Layout خودت
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgotPassword";
 import OTPVerification from "../pages/OTPVerification";
 import Home from "../pages/Home";
+import ContactUs from "../pages/ContactUs";
+import AboutUs from "../pages/AboutUs";
+import Activities from "../pages/Activities";
 
 const router = createBrowserRouter([
   {
-    element: <Layout />, // 👈 تمام صفحات داخل Layout می‌افتند
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      // هر صفحه‌ای که باید Header/Footer داشته باشد اینجاست
-    ],
+    path: "/",
+    element: <Home />,
   },
-  // و صفحاتی که نمی‌خواهی Layout داشته باشند (مثل login/signup)
+  {
+    path: "/contact",
+    element: <ContactUs />,
+  }, 
+  {
+    path: "/about",
+    element: <AboutUs />,
+  },
+  {
+    path: "/activities",
+    element: <Activities />,
+  },
   {
     path: "/login",
     element: <Login />,
