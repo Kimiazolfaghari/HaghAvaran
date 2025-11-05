@@ -7,10 +7,11 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import AboutUs from "../pages/AboutUs";
 import Activities from "../pages/Activities";
+import Dashboard from "../pages/Dashboard";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
   },
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/verify-otp",
     element: <OTPVerification />,
+  },
+  {
+    path: "/",
+    element: <Dashboard />,
   },
 ]);
 
